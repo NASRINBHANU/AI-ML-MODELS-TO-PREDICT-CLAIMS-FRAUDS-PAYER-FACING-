@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            margin:150px;
+            text-align:left;
+            background-image: url('b1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+   
+        .label{
+            width:200px;
+            
+            display:inline-block;
+            font-style: bold;
+        }
+
+    </style>
+</head>
+<body id="1">
+    <form action='page1.html' method="post">
+      <center><strong><p style="font-size:70px;">FRAUD INSURANCE CLAIM DETECTOR</p></strong></center>
+        <p>PROVIDER DETAILS:</p>
+        <label for="p_ids">PROVIDER ID:</label>
+        <select name="p_ids" id="p_ids">
+          <option value="pr1">PRV51459</option>
+          <option value="pr2">PRV51460</option>
+          <option value="pr3">PRV51461</option>
+          <option value="pr4">PRV51462</option>
+          <option value="pr5">PRV51463</option>
+          <option value="pr6">PRV51464</option>
+          <option value="pr7">PRV51465</option>
+          <option value="pr8">PRV51466</option>
+          <option value="pr9">PRV51467</option>
+          <option value="pr10">PRV51468</option>
+          <option value="pr11">PRV51469</option>
+          <option value="pr12">PRV51470</option>
+          <option value="pr13">PRV51471</option>
+          <option value="pr14">PRV51472</option>
+          <option value="pr15">PRV51473</option>
+          <option value="pr16">PRV51474</option>
+        </select>
+        <br><br>
+
+        <p>PHYSICIAN DETAILS:</p>
+        <label for="ph_ids">PHYSICIAN ID:</label>
+        <select name="ph_ids" id="ph_ids">
+          <option value="phy1">PHY51459</option>
+          <option value="phy2">PHY51460</option>
+          <option value="phy3">PHY51461</option>
+          <option value="phy4">PHY51462</option>
+          <option value="phy5">PHY51463</option>
+          <option value="phy6">PHY51464</option>
+          <option value="phy7">PHY51465</option>
+          <option value="phy8">PHY51466</option>
+          <option value="phy9">PHY51467</option>
+          <option value="phy10">PHY51468</option>
+          <option value="phy11">PHY51469</option>
+          <option value="phy12">PHY51470</option>
+          <option value="phy13">PHY51471</option>
+          <option value="phy14">PHY51472</option>
+          <option value="phy15">PHY51473</option>
+          <option value="phy16">PHY51474</option>
+        </select>
+        <br><br>
+
+        <label for="oph_ids">OPERATING PHYSICIAN:</label>
+        <select name="oph_ids" id="oph_ids">
+          <option value="ophy1">OPHY51459</option>
+          <option value="ophy2">OPHY51460</option>
+          <option value="ophy3">OPHY51461</option>
+          <option value="ophy4">OPHY51462</option>
+          <option value="ophy5">OPHY51463</option>
+          <option value="ophy6">OPHY51464</option>
+          <option value="ophy7">OPHY51465</option>
+          <option value="ophy8">OPHY51466</option>
+          <option value="ophy9">OPHY51467</option>
+          <option value="ophy10">OPHY51468</option>
+          <option value="ophy11">OPHY51469</option>
+          <option value="ophy12">OPHY51470</option>
+          <option value="ophy13">OPHY51471</option>
+          <option value="ophy14">OPHY51472</option>
+          <option value="ophy15">OPHY51473</option>
+          <option value="ophy16">OPHY51474</option>
+        </select>
+        <br><br>
+
+        <label for="otherph_ids">OTHER PHYSICIAN:</label>
+        <select name="otherph_ids" id="otherph_ids">
+          <option value="otherphy1">OTHPHY51459</option>
+          <option value="otherphy2">OTHPHY51460</option>
+          <option value="otherphy3">OTHPHY51461</option>
+          <option value="otherphy4">OTHPHY51462</option>
+          <option value="otherphy5">OTHPHY51463</option>
+          <option value="otherphy6">OTHPHY51464</option>
+          <option value="otherphy7">OTHPHY51465</option>
+          <option value="otherphy8">OTHPHY51466</option>
+          <option value="otherphy9">OTHPHY51467</option>
+          <option value="otherphy10">OTHPHY51468</option>
+          <option value="otherphy11">OTHPHY51469</option>
+          <option value="otherphy12">OTHPHY51470</option>
+          <option value="otherphy13">OTHPHY51471</option>
+          <option value="otherphy14">OTHPHY51472</option>
+          <option value="otherphy15">OTHPHY51473</option>
+          <option value="otherphy16">OTHPHY51474</option>
+        </select>
+        <br><br>
+        
+
+        <p>PATIENT DETAILS:</p>
+        <label for="pa_ids">PATIENT ID:</label>
+        <select name="pa_ids" id="pa_ids">
+          <option value="p1">BENE51459</option>
+          <option value="p2">BENE51460</option>
+          <option value="p3">BENE51461</option>
+          <option value="p4">BENE51462</option>
+          <option value="p5">BENE51463</option>
+          <option value="p6">BENE51464</option>
+          <option value="p7">BENE51465</option>
+          <option value="p8">BENE51466</option>
+          <option value="p9">BENE51467</option>
+          <option value="p10">BENE51468</option>
+          <option value="p11">BENE51469</option>
+          <option value="p12">BENE51470</option>
+          <option value="p13">BENE51471</option>
+          <option value="p14">BENE51472</option>
+          <option value="p15">BENE51473</option>
+          <option value="p16">BENE51474</option>
+        </select>
+        <br><br>
+
+        <label for="gender">GENDER:</label>
+        <select name="gender" id="gender">
+          <option value="g1">0</option>
+          <option value="g2">1</option>
+          <!-- <option value="g3">OTHERS</option> -->
+          </select>
+          <br><br>
+
+          <label for="race">RACE:</label>
+          <select name="race" id="race">
+          <option value="r1">1</option>
+          <option value="r2">2</option>
+          <option value="r3">3</option>
+          <option value="r4">5</option>
+         </select>
+        <br><br>
+
+
+        <label for="state">STATE:</label>
+        <select name="state" id="state">
+        <option value="st1">5</option>
+        <option value="st2">19</option>
+        <option value="st3">20</option>
+        <option value="st4">22</option>
+        <option value="st5">24</option>
+        <option value="st6">30</option>
+        <option value="st7">42</option>
+        <option value="st8">49</option>
+        <option value="st9">56</option>
+        <option value="st10">65</option>
+        <option value="st11">69</option>
+        <option value="st12">78</option>
+        <option value="st13">83</option>
+        <option value="st14">88</option>
+       </select>
+      <br><br>
+
+
+      <label for="country">COUNTRY:</label>
+        <select name="country" id="country">
+        <option value="ct1">355</option>
+        <option value="ct2">219</option>
+        <option value="ct3">620</option>
+        <option value="ct4">422</option>
+        <option value="ct5">624</option>
+        <option value="ct6">730</option>
+        <option value="ct7">242</option>
+        <option value="ct8">949</option>
+        <option value="ct9">756</option>
+        <option value="ct10">865</option>
+        <option value="ct11">969</option>
+        <option value="ct12">748</option>
+        <option value="ct13">683</option>
+        <option value="ct14">888</option>
+       </select>
+      <br><br>
+
+    <p>PATIENT RECOGNIZED WITH CHRONICCOND PRE TREATMENT</p>
+    <p><small>enter value as (0/1) or (yes/no)</small></p>
+      
+    <label for="rdi">Renal disease Indicator:</label>
+        <select name="rdi" id="rdi">
+          <option value="rdi1">0</option>
+          <option value="rdi2">1</option>
+          </select>
+          <br><br>
+
+    <label for="al">ALZHEIMER:</label>
+          <select name="al" id="al">
+            <option value="al1">0</option>
+            <option value="al2">1</option>
+            </select>
+            <br><br>    
+            
+            <label for="hf">HEART FAILURE:</label>
+            <select name="hf" id="hf">
+              <option value="hf1">0</option>
+              <option value="hf2">1</option>
+              </select>
+              <br><br>
+              
+            <label for="kd">KIDNEY DISEASE:</label>
+        <select name="kd" id="kd">
+          <option value="kd1">0</option>
+          <option value="kd2">1</option>
+          </select>
+          <br><br>
+          
+
+          <label for="cn">CANCER:</label>
+        <select name="cn" id="cn">
+          <option value="cn1">0</option>
+          <option value="cn2">1</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="ob">OBSTR PULMONARY:</label>
+        <select name="ob" id="ob">
+          <option value="ob1">0</option>
+          <option value="ob2">1</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="dp">DEPRESSION:</label>
+        <select name="dp" id="dp">
+          <option value="dp1">0</option>
+          <option value="dp2">1</option>
+          </select>
+          <br><br>
+
+
+          <label for="dia">DIABETES:</label>
+        <select name="dia" id="dia">
+          <option value="dia1">0</option>
+          <option value="dia2">1</option>
+          </select>
+          <br><br>
+
+
+          <label for="ich">IsChemicHeart:</label>
+        <select name="ich" id="ich">
+          <option value="ich1">0</option>
+          <option value="ich2">1</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="os">OSTEROPORASIS:</label>
+        <select name="os" id="os">
+          <option value="os1">0</option>
+          <option value="os2">1</option>
+          </select>
+          <br><br>
+
+
+          <label for="art">ARTHRITIS:</label>
+        <select name="art" id="art">
+          <option value="art1">0</option>
+          <option value="art2">1</option>
+          </select>
+          <br><br>
+
+
+          <label for="st">STROKE:</label>
+        <select name="st" id="st">
+          <option value="st1">0</option>
+          <option value="st2">1</option>
+          </select>
+          <br><br>
+
+
+          <p>TREATMENT UNDERGONE BY PATIENT:</p>
+          <P><small>Diagnosis:</small></P>
+          <label for="d1">DIAGNOSIS 1:</label>
+          <select name="d1" id="d1">
+            <option value="d11">1459</option>
+            <option value="d12">1460</option>
+            <option value="d13">1461</option>
+            <option value="d14">1462</option>
+            <option value="d15">1463</option>
+            <option value="d16">1464</option>
+            <option value="d17">1465</option>
+            <option value="d18">1466</option>
+            <option value="d19">1467</option>
+            <option value="d110">1468</option>
+            <option value="d111">1469</option>
+            <option value="d112">1470</option>
+            <option value="d113">1471</option>
+            <option value="d114">1472</option>
+            <option value="d115">1473</option>
+            <option value="d116">1474</option>
+          </select>
+          <br><br>
+
+          <label for="d2">DIAGNOSIS 2:</label>
+          <select name="d2" id="d2">
+            <option value="d21">2459</option>
+            <option value="d22">2460</option>
+            <option value="d23">2461</option>
+            <option value="d24">2462</option>
+            <option value="d25">2463</option>
+            <option value="d26">2464</option>
+            <option value="d27">2465</option>
+            <option value="d28">2466</option>
+            <option value="d29">2467</option>
+            <option value="d210">2468</option>
+            <option value="d211">2469</option>
+            <option value="d212">2470</option>
+            <option value="d213">2471</option>
+            <option value="d214">2472</option>
+            <option value="d215">2473</option>
+            <option value="d216">2474</option>
+          </select>
+          <br><br>
+
+
+          <label for="d3">DIAGNOSIS 3:</label>
+          <select name="d3" id="d3">
+            <option value="d31">3459</option>
+            <option value="d32">3460</option>
+            <option value="d33">3461</option>
+            <option value="d34">3462</option>
+            <option value="d35">3463</option>
+            <option value="d36">3464</option>
+            <option value="d37">3465</option>
+            <option value="d38">3466</option>
+            <option value="d39">3467</option>
+            <option value="d310">3468</option>
+            <option value="d311">3469</option>
+            <option value="d312">3470</option>
+            <option value="d313">3471</option>
+            <option value="d314">3472</option>
+            <option value="d315">3473</option>
+            <option value="d316">3474</option>
+          </select>
+          <br><br>
+
+
+          <label for="d4">DIAGNOSIS 4:</label>
+          <select name="d4" id="d4">
+            <option value="d41">1452</option>
+            <option value="d42">1462</option>
+            <option value="d43">1462</option>
+            <option value="d44">1462</option>
+            <option value="d45">1462</option>
+            <option value="d46">1462</option>
+            <option value="d47">1462</option>
+            <option value="d48">1462</option>
+            <option value="d49">1462</option>
+            <option value="d410">1422</option>
+            <option value="d411">1462</option>
+            <option value="d412">1472</option>
+            <option value="d413">1472</option>
+            <option value="d414">1472</option>
+            <option value="d415">1472</option>
+            <option value="d416">1472</option>
+          </select>
+          <br><br>
+
+
+          <label for="d5">DIAGNOSIS 5:</label>
+          <select name="d5" id="d5">
+            <option value="d51">5459</option>
+            <option value="d52">5460</option>
+            <option value="d53">5461</option>
+            <option value="d54">5462</option>
+            <option value="d55">5463</option>
+            <option value="d56">5464</option>
+            <option value="d57">5465</option>
+            <option value="d58">5466</option>
+            <option value="d59">5467</option>
+            <option value="d510">5468</option>
+            <option value="d511">5469</option>
+            <option value="d512">5470</option>
+            <option value="d513">5471</option>
+            <option value="d514">5472</option>
+            <option value="d515">5473</option>
+            <option value="d516">5474</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="d6">DIAGNOSIS 6:</label>
+          <select name="d6" id="d6">
+            <option value="d61">1459</option>
+            <option value="d62">1460</option>
+            <option value="d63">1461</option>
+            <option value="d64">1462</option>
+            <option value="d65">1463</option>
+            <option value="d66">1464</option>
+            <option value="d67">1465</option>
+            <option value="d68">1466</option>
+            <option value="d69">1467</option>
+            <option value="d610">1468</option>
+            <option value="d611">1469</option>
+            <option value="d612">1470</option>
+            <option value="d613">1471</option>
+            <option value="d614">1472</option>
+            <option value="d615">1473</option>
+            <option value="d616">1474</option>
+          </select>
+          <br><br>
+
+
+          <label for="d7">DIAGNOSIS 7:</label>
+          <select name="d7" id="d7">
+            <option value="d71">1457</option>
+            <option value="d72">1467</option>
+            <option value="d73">1467</option>
+            <option value="d74">1467</option>
+            <option value="d75">1467</option>
+            <option value="d76">1467</option>
+            <option value="d77">1467</option>
+            <option value="d78">1467</option>
+            <option value="d79">1467</option>
+            <option value="d710">1467</option>
+            <option value="d711">1467</option>
+            <option value="d712">1477</option>
+            <option value="d713">1477</option>
+            <option value="d714">1477</option>
+            <option value="d715">1477</option>
+            <option value="d716">1477</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="d8">DIAGNOSIS 8:</label>
+          <select name="d8" id="d8">
+            <option value="d81">1489</option>
+            <option value="d82">1480</option>
+            <option value="d83">1481</option>
+            <option value="d84">1482</option>
+            <option value="d85">1483</option>
+            <option value="d86">1484</option>
+            <option value="d87">1485</option>
+            <option value="d88">1486</option>
+            <option value="d89">1487</option>
+            <option value="d810">1488</option>
+            <option value="d811">1489</option>
+            <option value="d812">1480</option>
+            <option value="d813">1481</option>
+            <option value="d814">1482</option>
+            <option value="d815">1483</option>
+            <option value="d816">1484</option>
+          </select>
+          <br><br>
+
+
+          <label for="d9">DIAGNOSIS 9:</label>
+          <select name="d9" id="d9">
+            <option value="d91">1959</option>
+            <option value="d92">1960</option>
+            <option value="d93">1961</option>
+            <option value="d94">1962</option>
+            <option value="d95">1963</option>
+            <option value="d96">1964</option>
+            <option value="d97">1965</option>
+            <option value="d98">1966</option>
+            <option value="d99">1967</option>
+            <option value="d910">1968</option>
+            <option value="d911">1969</option>
+            <option value="d912">1970</option>
+            <option value="d913">1971</option>
+            <option value="d914">1972</option>
+            <option value="d915">1973</option>
+            <option value="d916">1974</option>
+          </select>
+          <br><br>
+
+
+
+          <label for="d10">DIAGNOSIS 10:</label>
+          <select name="d10" id="d10">
+            <option value="d101">1059</option>
+            <option value="d102">1060</option>
+            <option value="d103">1061</option>
+            <option value="d104">1062</option>
+            <option value="d105">1063</option>
+            <option value="d106">1064</option>
+            <option value="d107">1065</option>
+            <option value="d108">1066</option>
+            <option value="d109">1067</option>
+            <option value="d1010">1068</option>
+            <option value="d1011">1069</option>
+            <option value="d1012">1070</option>
+            <option value="d1013">1071</option>
+            <option value="d1014">1072</option>
+            <option value="d1015">1073</option>
+            <option value="d1016">1074</option>
+          </select>
+          <br><br>
+
+    <p>PROCEDURE:</p>
+    <label for="pro1">PROCEDURE 1:</label>
+          <select name="pro1" id="pro1">
+            <option value="p11">1059.0</option>
+            <option value="p12">1060.0</option>
+            <option value="p13">1061.0</option>
+            <option value="p14">1062.0</option>
+            <option value="p15">1063.0</option>
+            <option value="p16">1064.0</option>
+            <option value="p17">1065.0</option>
+            <option value="p18">1066.0</option>
+            <option value="p19">1067.0</option>
+            <option value="p110">1068.0</option>
+            <option value="p111">1069.0</option>
+            <option value="p112">1070.0</option>
+            <option value="p113">1071.0</option>
+            <option value="p114">1072.0</option>
+            <option value="p115">1073.0</option>
+            <option value="p116">1074.0</option>
+          </select>
+          <br><br>
+
+        <label for="pro2">PROCEDURE 2:</label>
+        <select name="pro2" id="pro2">
+            <option value="p21">2059.0</option>
+            <option value="p22">2060.0</option>
+            <option value="p23">2061.0</option>
+            <option value="p24">2062.0</option>
+            <option value="p25">2063.0</option>
+            <option value="p26">2064.0</option>
+            <option value="p27">2065.0</option>
+            <option value="p28">2066.0</option>
+            <option value="p29">2067.0</option>
+            <option value="p210">2068.0</option>
+            <option value="p211">2069.0</option>
+            <option value="p212">2070.0</option>
+            <option value="p213">2071.0</option>
+            <option value="p214">2072.0</option>
+            <option value="p215">2073.0</option>
+            <option value="p216">2074.0</option>
+          </select>
+          <br><br>
+
+          <label for="pro3">PROCEDURE 3:</label>
+          <select name="pro3" id="pro3">
+              <option value="p31">3059.0</option>
+              <option value="p32">3060.0</option>
+              <option value="p33">3061.0</option>
+              <option value="p34">3062.0</option>
+              <option value="p35">3063.0</option>
+              <option value="p36">3064.0</option>
+              <option value="p37">3065.0</option>
+              <option value="p38">3066.0</option>
+              <option value="p39">3067.0</option>
+              <option value="p310">3068.0</option>
+              <option value="p311">3069.0</option>
+              <option value="p312">3070.0</option>
+              <option value="p313">3071.0</option>
+              <option value="p314">3072.0</option>
+              <option value="p315">3073.0</option>
+              <option value="p316">3074.0</option>
+            </select>
+            <br><br>
+
+
+            <label for="pro4">PROCEDURE 4:</label>
+            <select name="pro4" id="pro4">
+                <option value="p41">4059.0</option>
+                <option value="p42">4060.0</option>
+                <option value="p43">4061.0</option>
+                <option value="p44">4062.0</option>
+                <option value="p45">4063.0</option>
+                <option value="p46">4064.0</option>
+                <option value="p47">4065.0</option>
+                <option value="p48">4066.0</option>
+                <option value="p49">4067.0</option>
+                <option value="p410">4068.0</option>
+                <option value="p411">4069.0</option>
+                <option value="p412">4070.0</option>
+                <option value="p413">4071.0</option>
+                <option value="p414">4072.0</option>
+                <option value="p415">4073.0</option>
+                <option value="p416">4074.0</option>
+              </select>
+              <br><br>    
+          
+
+        <p>OTHER GROUP CODE:</p>
+        <label for="dgc">DIAGNOSIS GROUP CODE:</label>
+            <select name="dgc" id="dgc">
+                <option value="dgc1">4554</option>
+                <option value="dgc2">5847</option>
+                <option value="dgc3">7645</option>
+                <option value="dgc4">4055</option>
+                <option value="dgc5">9898</option>
+                <option value="dgc6">1643</option>
+                <option value="dgc7">7345</option>
+                <option value="dgc8">9856</option>
+                <option value="dgc9">8945</option>
+                <option value="dgc10">8756</option>
+                <option value="dgc11">2376</option>
+                <option value="dgc12">9354</option>
+                <option value="dgc13">9467</option>
+                <option value="dgc14">9387</option>
+                <option value="dgc15">9478</option>
+                <option value="dgc16">3978</option>
+              </select>
+              <br><br>    
+
+              <label for="cadc">CLMADMITDIAGNOSISCODE:</label>
+              <select name="cadc" id="cadc">
+                  <option value="c1">V4675</option>
+                  <option value="c2">58B47</option>
+                  <option value="c3">D7645</option>
+                  <option value="c4">40H55</option>
+                  <option value="c5">98K98</option>
+                  <option value="c6">16Y43</option>
+                  <option value="c7">7C345</option>
+                  <option value="c8">98M56</option>
+                  <option value="c9">89A45</option>
+                  <option value="c10">Z8756</option>
+                  <option value="c11">2U376</option>
+                  <option value="c12">93O54</option>
+                  <option value="c13">94R67</option>
+                  <option value="c14">9OP387</option>
+                  <option value="c15">947DK8</option>
+                  <option value="c16">3978PX</option>
+                </select>
+                <br><br>  
+                
+       <P>DAYS ADMITTED AND CLAIMED:</P>
+       <label for="no_of_days">No Of Days Admitted:</label>
+       <input type="text" id="no_of_days" name="no_of_days"><br><br>
+       <label for="no_of_days_claim">No Of Days For Claim:</label>
+       <input type="text" id="no_of_days_claim" name="no_of_days_claim"><br><br> 
+       
+       <P>INSURANCE AMOUNT REIMBURSED BY PATIENT</P>:</P>
+       <label for="tia">TOTAL INSURANCE AMOUNT REIMBURSED:</label>
+       <input type="text" id="tia" name="tia"><br><br>
+       <label for="tdap">TOTAL DEDUCTIBLE AMOUNT PAID:</label>
+       <input type="text" id="tdap" name="tdap"><br><br>   
+
+       <label for="arai">AMOUNT REIMBURSED AS INPATIENT:</label>
+       <input type="text" id="arai" name="arai"><br><br>
+       <label for="tdpai">TOTAL DEDUCTIBLE PAID AS INPATIENT:</label>
+       <input type="text" id="tdpai" name="tdpai"><br><br>   
+
+       <label for="arao">AMOUNT REIMBURSED AS OUTPATIENT:</label>
+       <input type="text" id="arao" name="arao"><br><br>
+       <label for="tdpao">TOTAL DEDUCTIBLE PAID AS OUTPATIENT:</label>
+       <input type="text" id="tdpao" name="tdpao"><br><br>   
+
+       <button>PREDICT</button>
+
+
+          
+        
+        
+
+    </form>
+</body>
+</html>
